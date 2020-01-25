@@ -1,10 +1,137 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>HTML and HTML5 </title>
+        <style>
 
+            .smaller-image { width: 100px;}
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+            .silver-background {
+                background-color: silver;
+            }
+            .red-text {color: red;}
+            p {
+                 font-size: 16px;
+                 font-family: monospace;
+              }
+            h2 {
+                font-family:Lobster,monospace;
+            }
+
+            #cat-photo-form {
+                background-color: green;
+            }
+
+            [type='checkbox'] {
+                margin: 20px 0px 20px 0px;
+            }
+
+            body {
+                background-color: #000000;
+                color: green;
+            }
+
+            .pink-text {
+                color: pink !important;
+            }
+            .blue-text {
+                color: blue;
+            }
+            #orange-text {
+                color: orange;
+            }
+
+
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" 
+        rel="stylesheet" type="text/css">
     </head>
     <body>
         
+        <img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" 
+        alt="แมวน้อยนอนคอเคลีย">
+        <a target="_blank" href="http://freecatphotoapp.com">cat photo</a>
+        <a href="#footer">Jump to Bottom</a>
+
+        <h2 class="red-text">CatPhotoApp</h2>
+        <main>
+         <p class="red-text">Kitty ipsum dolor sit amet, shed everywhere 
+            shed everywhere stretching attack your ankles
+             chase the red dot, hairball run catnip eat the
+              grass sniff.
+         </p>
+         <p>Kitty ipsum dolor sit amet, shed everywhere 
+            shed everywhere stretching attack your ankles
+             chase the red dot, hairball run catnip eat the
+              grass sniff.
+         </p>
+            
+         <h6>
+            ดูรูปภาพแมวเพิ่มเติม 
+            <a href="#">รูปถ่ายของแมว</a>  
+         </h6>
+         
+         <a href="#">
+            <img src="https://bit.ly/fcc-relaxing-cat" 
+            alt="แมวน้อยนอนคอเคลีย"></a>
+         
+         <div class="silver-background">
+            <p> สิ่งที่แมวชอบ </p>
+            <ul>
+                <li>catnip grass</li>
+                <li>ปลาทู</li>
+                <li>ก้อนไหมพรม</li>
+            </ul>
+            <p>สิ่งที่แมวเกลียดที่สุด</p>
+            <ol>
+                <li>อาบน้ำ</li>
+                <li>หนู</li>
+            </ol>
+         </div>
+        
+         <input type="text">
+         
+         <form id="cat-photo-form" action="/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required >
+            <button type="submit">submit</button>
+        
+            <label for="indoor">
+                <input type="radio" name="indoor-outdoor" checked>indoor
+            </label>
+
+            <label for="outdoor">
+                <input type="radio" name="indoor-outdoor">outdoor
+            </label>
+
+            <label for="kind">
+                <input id="kind" type="checkbox"
+                name="personality" checked>kind
+            </label>
+
+            <label for="friendly">
+                <input id="friendly" type="checkbox"
+                name="personality">friendly
+            </label>
+
+            <label for="honest">
+                <input id="honest" type="checkbox"
+                name="personality">honest
+            </label>
+         </form>
+
+         <h1 style="color: white;" id="orange-text" class="pink-text blue-text">css challenge</h1>
+
+
+        </main>
+    
+        <footer id="footer"></footer>
+        
+
     </body>
 
 </html>
