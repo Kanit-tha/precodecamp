@@ -8,8 +8,17 @@
 
 </head>
 <style>
+    body {
+        background-color: lightblue;
+    }
+
     .top-text {
+        position: fixed;
+        background-color: lightslategray;
         top: 0px;
+        text-align: center;
+        width: 1100px;
+
 
     }
 
@@ -34,15 +43,43 @@
 
     .right-menu {
         position: fixed;
-        top: 40px;
-        right: 20px;
+        top: 20px;
+        right: 50px;
 
     }
 
     .left-menu {
         position: fixed;
-        top: 40px;
-        left: 10px;
+        top: 20px;
+        left: 30px;
+    }
+
+    .pro-pic {
+
+        width: 1100;
+        height: 600;
+        border: 3px cadetblue;
+    }
+
+    .pro-action {
+        position: absolute;
+        bottom: 80px;
+        right: 200px;
+        border: 3px cadetblue;
+
+    }
+
+    #menu {
+        background-color: cadetblue;
+    }
+
+    .button {}
+
+    footer {
+        background-color: darkslategray;
+        display: block;
+        /* width: 1100px;
+        height: 250px; */
     }
 </style>
 
@@ -50,19 +87,17 @@
 
 
 <body>
-    <div>
+    <header style="border:black;">
+
         <div class="top-text">
-            <!-- เมนู -->
-            welcome to lovely shop
+            <li type="none"> welcome to lovely shop</li>
         </div>
-        <hr>
-
-
         <!-- สินค้า -->
-        <div>
-            <div class="left-menu"><a href="#">Home</a>
+        <div id="menu">
+            <div class="left-menu">
+                <a class="button" href="#">Home</a>
                 <div class="dropdown">
-                    <div>สินค้า</div>
+                    <div class="button">Accessories</div>
 
                     <div class="dropdown-content">
                         <a href="#">necklace</a><br>
@@ -72,38 +107,129 @@
                 </div>
             </div>
 
-            <div>
-                <div class="right-menu">
 
-                    <form action="##"></form>
-                    ค้นหา
-                    <input type="search" name="search" placeholder="สินค้าที่ต้องการ">
-                    <input type="submit">
-                    </form>
-                    <a href="#">Cart</a>
-                    <a href="#">Login</a>
+            <div class="right-menu">
 
+                <form action="##"></form>
+                ค้นหา
+                <input type="search" name="search" placeholder="สินค้าที่ต้องการ">
+                <input type="submit" value="search">
+                </form>
+                <a class="button" href="#">Cart</a>
+                <a class="button" href="#">Login</a>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="header">
+            <div class="pro-pic">
+                <img src="/picforweb/woman-size1280.jpg" alt="necklace" width="1100" height="600">
+            </div>
+            <div class="pro-action">
+                <h1 style="color:black;">
+                    Lorem ipsum dolor sit.
+                </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    <br>elit. Voluptas est doloribus numquam error enim it
+                    <br>aque, nisi officia facere. Quisquam, dolore.
+                </p>
+                <div>
+                    <button type="button">
+                        BUY NOW
+                    </button>
                 </div>
+            </div>
+            <h1> Accessories</h1>
+            <p>8 item</p>
+        </div>
+    </header>
+    <div style="background-color:whitesmoke;">
+        <div style=" background-color: darkslategray; color: whitesmoke;">
+            <h4> NECKLACE</h4>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <img src="/picforweb/necklace-665715_640.jpg" alt="necklace" width="200px">
+                    
+                    <div>
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <p>name <br>$</p>
+            </div>
+
+            <div>
+                <div>
+                    <img src="/picforweb/agate-665719_640.jpg" alt="necklace" width="200px">
+                    
+                    <div>
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <p>name <br>$</p>
+            </div>
+
+            <div>
+                <div>
+                    <img src="/picforweb/fluorite-665718_640.jpg" alt="necklace" width="200px">
+                    
+                    <div>
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <p>name <br>$</p>
+            </div>
+
+            <div>
+                <div>
+                    <img src="/picforweb/chain-784422_640.jpg" alt="necklace" width="200px">
+                    
+                    <div>
+                        <button type="submit"></button>
+                    </div>
+                </div>
+                <p>name <br>$</p>
             </div>
         </div>
 
     </div>
 
-    
-    <div class="head">
-        <img src="#" alt="necklace>
-
-        รูป
-
+    <div style="padding: 20px; background-color:whitesmoke;">
+        <form action="#">
+            <h2> Subscribe</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, nihil?</p>
+            <input type="email" placeholder="Enter e-mail">
+            <p><button type="button">Subscribe</button></p>
+        </form>
     </div>
-    <div>
-        item
+    <footer>
+        <div style="padding: 20px; background-color: steelblue;">
+            <h2>Contact</h2>
+            <form action="#">
+                <p><input type="text" placeholder="Name"></p>
+                <p><input type="email" placeholder="Email"></p>
+                <p><input type="text" placeholder="Subject"></p>
+                <p><input type="text" placeholder="Message"></p>
+                <p><button type="submit">Send</button></p>
 
+            </form>
+
+        </div>
+
+
+
+
+    </footer>
+    <div style="background-color:lightslategray;">
+        <li type="none"> 2563</li>
     </div>
-    <div>
-        footer
-        form
-    </div>
+
 </body>
 
 </html>
