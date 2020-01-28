@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Lovely shop
-        </title>
 
-    </head>
+<head>
+    <title>
+        Lovely shop
+    </title>
 
-    <body>
-        <div>
-            
+</head>
+<style>
+    .top-text {
+        top: 0px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .right-menu {
+        position: fixed;
+        top: 40px;
+        right: 20px;
+
+    }
+
+    .left-menu {
+        position: fixed;
+        top: 40px;
+        left: 10px;
+    }
+</style>
+
+
+
+
+<body>
+    <div>
+        <div class="top-text">
+            <!-- เมนู -->
+            welcome to lovely shop
         </div>
-    </body>
+        <hr>
+
+
+        <!-- สินค้า -->
+        <div>
+            <div class="left-menu"><a href="#">Home</a>
+                <div class="dropdown">
+                    <div>สินค้า</div>
+
+                    <div class="dropdown-content">
+                        <a href="#">necklace</a><br>
+                        <a href="#">Bracelet</a><br>
+                        <a href="#">earrings</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="right-menu">
+
+                    <form action="##"></form>
+                    ค้นหา
+                    <input type="search" name="search" placeholder="สินค้าที่ต้องการ">
+                    <input type="submit">
+                    </form>
+                    <a href="#">Cart</a>
+                    <a href="#">Login</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="head">
+        <img src="#" alt="necklace>
+
+        รูป
+
+    </div>
+    <div>
+        item
+
+    </div>
+    <div>
+        footer
+        form
+    </div>
+</body>
+
 </html>
