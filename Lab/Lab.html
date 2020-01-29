@@ -1,74 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab</title>
+    <style>
+        caption {
+            font-size: 30pt;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        div {
+            margin: 30px;
+            padding: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <table>
-        <caption>attribute</caption>
-        <thead>
-            <tr>
-                <th>Tag</th>
-                <th>Attribute</th>
-                <th>ใช้งานอย่างไร</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> h </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> p </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> div </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> img </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> a </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> ul </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> ol </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> table </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> form </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> button </td>
-                <td></td>
-                <td></td>
-            </tr>
-    
-        </tbody>
-    </table>
+    <div>
+        <table border="3px">
+            <caption>Attribute</caption>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Attribute</th>
+                    <th>ใช้งานอย่างไร</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> h </td>
+                    <td> style </td>
+                    <td> กำหนดรายละเอียด ข้อความ เช่น สี ขนาดตัวหนังสือ สีพื้นหลัง เป็นต้น </td>
+                </tr>
+                <tr>
+                    <td> p </td>
+                    <td> style </td>
+                    <td> กำหนดรายละเอียด ข้อความ </td>
+                </tr>
+                <tr>
+                    <td> div </td>
+                    <td>style</td>
+                    <td> กำหนดรายละเอียด เช่น ตำแหน่ง ขนาด พื้นหลัง กรอบ </td>
+                </tr>
+                <tr>
+                    <td> img </td>
+                    <img src="" alt="">
+                    <td>src <br>
+                        alt <br>
+                        style
+                    </td>
+                    <td>กำหนดตำแหน่งที่อยู่ของภาพที่จะนำภาพมา<br>
+                        กำหนดข้อความที่จะแสดงหากภาพมีปัญหาไม่สามารถแสดง <br>
+                        รายละเอียดของภาพ เช่น ขนาดความกว้าง ยาว เป็นต้น </td>
+                </tr>
+                <tr>
+                    <td> a </td>
+
+                    <td>href <br>
+                        target <br>
+                        style
+                    </td>
+                    <td>กำหนดตำแหน่งที่อยู่ของปลายทางที่จะนำไป หรือเปิดขึ้น <br>
+                        ลักษณะการเปิดหรือการแสดงหน้าต่าง <br>
+                        รายละเอียดของลิงค์
+                    </td>
+                </tr>
+                <tr>
+                    <td> ul </td>
+                    <td>style</td>
+                    <td>รายละเอียดของสัญลักษณ์</td>
+                </tr>
+                <tr>
+                    <td> ol </td>
+                    <td>style</td>
+                    <td>รายละเอียดของหัวข้อ</td>
+                </tr>
+                <tr>
+                    <td> table </td>
+                    <td>style</td>
+                    <td>รายละเอียดของตาราง เช่น ขนาด ลักษณะของเส้น เป็นต้น</td>
+                </tr>
+                <tr>
+                    <td> form </td>
+                    <td>action</td>
+                    <td>ตำแหน่งที่จะส่งข้อมูลไป</td>
+                </tr>
+                <tr>
+                    <td> button </td>
+                    <td>style</td>
+                    <td>รายละเอียดของปุ่ม ประเภท</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+
+        <table border="3px">
+            <caption>Differentiation</caption>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>ความเหมือน</th>
+                    <th>ความแตกต่าง</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b> hr & br </b></td>
+                    <td> เป็น tag แบบ empty element </td>
+                    <td> <b>hr</b> เป็นคำสั่งสร้างเส้นแบ่ง <br>
+                        <b> br </b> เป็นคำสั่งขึ้นบรรทัดใหม่</td>
+                </tr>
+                <tr>
+                    <td> <b>ul & ol</b> </td>
+                    <td> เป็นคำสั่งเกี่ยวกับ list หัวข้อของ list</td>
+                    <td><b> ul </b>ลักษณะหัวจะเป็นสัญลักษณ์<br>
+                        <b>ol</b> ลักษณะหัวจะเป็นตัวเลข </td>
+                </tr>
+                <tr>
+                    <td> <b>select & checkbox & radio</b> </td>
+                    <td>ทั้งสามเป็นคำสั่งเกี่ยวกับการเลือก ตัวเลือก </td>
+                    <td> <b>select</b> เป็น Tag คำลั่ง แสดงการเลือกตัวเลือกแบบ drop down เลือกได้เพียงคำตอบเดียว<br>
+                        <b>radio</b> เป็น Type ของ Tag input แสดงการเลือกแบบแสดงสัญลักษณ์ วงกลม เลือกได้เพียงคำตอบเดียว
+                        <br>
+                        <b>checkbox</b> เป็น Type ของ Tag input แสดงการเลือกแบบแสดงสัญลักษณ์ สี่เหลี่ยม
+                        เลือกได้หลายคำตอบ</td>
+                </tr>
+                <tr>
+                    <td> <b>div & span</b> </td>
+                    <td> เป็นคำสั่งสร้างกล่องเหมือนกัน</td>
+                    <td> <b>div </b>สร้างออกมาเป็น Element แบบ block level <br>
+                        <b>span</b> สร้างออกมาเป็น Element แบบ inline level
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>script & style<b> </td>
+                    <td>เป็นคำสั่งสำหรับภาษาอื่นในไฟล์ html </td>
+                    <td> <b>script</b> เป็นการเขียนคำสั่งที่เป็น javascript <br>
+                        <b>style</b> เป็นการเขียนคำสั่งที่เป็น css
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table border="3px">
+            <caption>Input Type</caption>
+            <thead>
+                <tr>
+                    <th>input type</th>
+                    <th>คำอธิบาย</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>button</td>
+                    <td>ลักษณะเป็นปุ่มกด </td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>ลักษณะเป็นช่องสี่เหลี่ยม เมื่อคลิกจะเกิดเครื่องหมายขึ้น</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>เป็นช่องหน้าต่างขึ้นเมื่อคลิก ให้เลือก เดือน วัน และปี </td>
+                </tr>
+                <tr>
+                    <td>datetime</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>datetime-local</td>
+                    <td>เป็นช่องหน้าต่างขึ้นเมื่อคลิก 2 ส่วน ใหญ่ เดือนวันปี และเวลา</td>
+                </tr>
+                <tr>
+                    <td>month</td>
+                    <td>เป็นช่องหน้าต่างขึ้นเมื่อคลิก ให้เลือก เดือนและปี</td>
+                </tr>
+                <tr>
+                    <td>week</td>
+                    <td>เป็นช่องหน้าต่างขึ้นเมื่อคลิก ให้เลือก สัปดาห์ที่เท่าไหร่และปี</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>เป็นช่องหน้าต่างขึ้นเมื่อคลิก ให้เลือก เวลา</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>เป็นช่องสีเหลี่ยมแสดงสีดำเป็นค่าเริ่มต้น เมื่อคลิกปรากฏหน้าต่างให้เลือกสี</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้ เมื่อกรอกลงไปจะขึ้น Dot ไม่ให้เห็น</td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ ด้านขวาสามารถคลิกเพื่อเปลี่ยนตัวเลขได้</td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>ลักษณะเป็นช่องวงกลม เมื่อคลิกจะเกิดเครื่องหมายขึ้น</td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td>เป็นแภบเลื่อน สามารถเลื่อนไปซ้ายขวา เพื่อเลือกค่า</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>เป็นปุ่ม คลิกเพื่อเลือกไฟล์ เมื่อคลิกจะเป็นหน้าต่างแฟ้มให้เลือกเอกสาร</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>เป็นปุ่ม</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>เป็นช่องสีเหลี่ยมว่างๆ สามารถกรอกของความลงไปได้</td>
+                </tr>
+                <tr>
+                    <td>submit</td>
+                    <td>เป็นปุ่ม</td>
+                </tr>
+                <tr>
+                    <td>reset</td>
+                    <td>เป็นปุ่ม</td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td>ไม่ปรากฏ</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div style="width: 110ch; height: 100ch;">
+        <p>
+            <strong>strong ipsum dolor sit amet consectetur, adipisicing elit.</strong> Eligendi, nemo.
+            Placeat soluta modi totam iusto, blanditiis necessitatibus. Doloribus eaque
+            omnis, fuga perferendis,<b>label</b> <label> expedita nemo obcaecati culpa tempore
+                ipsam voluptatibus dolore et? </label>Voluptates sunt deleniti at ea temporibus optio
+            doloribus rem quis sed ipsa facilis esse aliquid quasi maiores exercitationem
+            placeat,<b>del</b><del> perspiciatis obcaecati nisi hic, architecto </del>quam ipsum totam molestiae
+            expedita. <b>b</b><b>Repellendus accusantium dolore error eum vel maiores perspiciatis quos
+                aspernatur aut earum! Facilis quibusdam ea odit eveniet, non nostrum.</b>
+            <b>em</b><em> repudiandae reprehenderit beatae ipsam repellat, sapiente suscipit pariatur
+                fuga sed, veniam, temporibus aspernatur doloribus.</em> Quidem eligendi iste ipsum, culpa,
+            cupiditate labore delectus dicta quis modi consequuntur dignissimos fugiat sint neque,
+            numquam mollitia excepturi nesciunt ipsa possimus illo?<b>mark</b><mark> Voluptates consectetur sed quia
+                eligendi mollitia libero illo ex aliquid. Voluptates, quibusdam rerum?</mark> Tempora repudiandae
+            <b>i</b><i>autem iusto perferendis labore soluta, error molestiae ab deleniti,</i> asperiores animi ipsam
+            expedita aliquid omnis aliquam aut sunt ipsum ex dolorum corrupti hic.<b>sub</b> <sub> veniam,
+                sequi aliquid magni sapiente rem vitae quam recusandae repellendus ullam </sub>omnis rerum laborum
+            tempora aliquam dolor quo praesentium maxime! Dignissimos dolores perferendis sit e
+            <b>sup</b><sup> consectetur fugit, veritatis commodi necessitatibus a accusamus voluptatum eum
+                laborum itaque officia aut quod animi dolorum natus sequi.</sup>
+        </p>
+
+    </div>
 </body>
+
 </html>
