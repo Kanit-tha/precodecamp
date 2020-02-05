@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,65 @@
     <title>Lab:DOM</title>
 
     <script>
-        function Hello(){
-            let firstName=""; lastName="";
+        function Hello() {
+            let firstName = ""; lastName = "";
 
-            firstName=prompt("ยินดีต้อนรับเข้าสู่โปรแกรม กรุณากรอกชื่อของคุณ","");
-            lastName=prompt("กรุณากรอกนามสกุลของคุณ","");
-            window.alert("สวัสดีค่ะ คุณ"+firstName+" "+lastName+" ยินดีที่ได้รู้จักค่ะ");
-            let name=(firstName+" "+lastName)
-            document.getElementById("name").innerHTML="สวัสดีค่ะ คุณ"+name;
+            firstName = prompt("ยินดีต้อนรับเข้าสู่โปรแกรม กรุณากรอกชื่อของคุณ", "");
+            lastName = prompt("กรุณากรอกนามสกุลของคุณ", "");
+            window.alert("สวัสดีค่ะ คุณ" + firstName + " " + lastName + " ยินดีที่ได้รู้จักค่ะ");
+            let name = (firstName + " " + lastName)
+            document.getElementById("name").innerHTML = "สวัสดีค่ะ คุณ" + name;
 
         }
-    
+
+        function dateTimeNow() {
+            let dateTime = new Date();
+            document.getElementById("dateTime").innerHTML = dateTime;
+        }
+
+
+        function multiply() {
+
+            sum=num1*num2;
+
+
+        }
+
+        function divide() {
+
+            sum=num1/num2;
+        }
     </script>
 </head>
+
 <body>
 
     <h1>โปรแกรม 1</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?</p>
 
-   <button onclick="Hello()">เริ่มโปรแกรม</button>
-   <h2 id="name"></h2>
-   
+    <button onclick="Hello()">เริ่มโปรแกรม</button>
+    <h2 id="name"></h2>
 
-   
+
+
     <h1>โปรแกรม 2</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, error!</p>
 
-    
+    <button onclick="dateTimeNow()">วันเวลาปัจจุบัน</button>
+    <h4 id="dateTime"></h4>
+
+    <h1>โปรแกรม 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, dolores!</p>
+
+    <form action="">
+        1st Number:
+        <input type="number" >
+        2nd Number:
+        <input type="number">
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+
+    </form>
 </body>
+
 </html>
