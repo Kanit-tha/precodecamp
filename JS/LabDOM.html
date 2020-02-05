@@ -8,10 +8,13 @@
 
     <script>
         function Hello(){
-            
+            let firstName=""; lastName="";
+
             firstName=prompt("ยินดีต้อนรับเข้าสู่โปรแกรม กรุณากรอกชื่อของคุณ","");
             lastName=prompt("กรุณากรอกนามสกุลของคุณ","");
             window.alert("สวัสดีค่ะ คุณ"+firstName+" "+lastName+" ยินดีที่ได้รู้จักค่ะ");
+            let name=(firstName+" "+lastName)
+            document.getElementById("name").innerHTML="สวัสดีค่ะ คุณ"+name;
 
         }
     
@@ -23,10 +26,13 @@
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellendus?</p>
 
    <button onclick="Hello()">เริ่มโปรแกรม</button>
+   <h2 id="name"></h2>
+   
+
    
     <h1>โปรแกรม 2</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, error!</p>
-    
+
     
 </body>
 </html>
