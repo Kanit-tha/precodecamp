@@ -25,17 +25,18 @@
         }
 
 
-        function multiply() {
-
-            sum=num1*num2;
-
-
+        function Multiply() {
+            firstNumber = document.getElementById("firstNumber").value;
+            secondNumber = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = firstNumber * secondNumber;
         }
 
-        function divide() {
-
-            sum=num1/num2;
+        function Divide() {
+            firstNumber = document.getElementById("firstNumber").value;
+            secondNumber = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = firstNumber / secondNumber;
         }
+
     </script>
 </head>
 
@@ -58,15 +59,18 @@
     <h1>โปรแกรม 3</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, dolores!</p>
 
-    <form action="">
-        1st Number:
-        <input type="number" >
-        2nd Number:
-        <input type="number">
-        <button onclick="multiply()">Multiply</button>
-        <button onclick="divide()">Divide</button>
-
+    <form>
+        <p>1st Number:
+        <input type="text" id="firstNumber" value=""></p>
+        <p>2nd Number:
+        <input type="text" id="secondNumber" value=""></p>
+        <input type="button" onclick="Multiply()" value="Multiply">
+        <input type="button" onclick="Divide()" value="Divide">
     </form>
+        <p>The Result Is:</p>
+        <p id="result"></p>
+
+      
 </body>
 
 </html>
