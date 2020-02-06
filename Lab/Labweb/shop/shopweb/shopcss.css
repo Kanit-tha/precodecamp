@@ -64,9 +64,10 @@ body {
     height: 250px;
 }
 .categoryHead {
-    margin: 0px 20px;
+    margin:0px 20px 0px 20px;
     background-color: white;
-    height: 30px;
+    height: 40px;
+    /* border: 1px black solid; */
 }
 
 .category {
@@ -89,4 +90,24 @@ body {
     height: 600px;
 }
 
-.partProduct
+.productHead {
+    background-color: white;
+    height: 40px;
+    color: orangered;
+    margin: 0px 20px;
+}
+.product {
+    display: flex;
+    background-color: whitesmoke;
+    margin: 3px 20px;
+    flex-wrap: wrap; 
+    justify-content: center space-between;   
+}
+.product > div {
+    width: 180px;
+    height: 200px;
+    background-color: white;
+    margin: 1px;
+
+
+}
