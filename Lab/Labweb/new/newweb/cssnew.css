@@ -1,0 +1,77 @@
+.topMenu {
+    height: 40px;
+}
+.head {
+    width: 100%;
+    height: 300px;
+    background-color: brown;
+}
+.topic {
+    width: 100%;
+    background-color: white;
+    height: 36px;
+}
+.topic a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.topic a.active {
+    background-color: tomato;
+    color: white;
+}
+
+.topic a:hover:not(.active) {
+    background-color: tomato;
+}
+.subTopic {
+    background-color: tomato;
+    width: 100%;
+    height: 36px;
+}
+.subTopic a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.subTopic a.active {
+    background-color: coral;
+    color: white;
+}
+
+.subTopic a:hover:not(.active) {
+    background-color: white;
+}
+.listNew {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+
+}
+
+.listNew > div {
+    background-color: coral;
+    height: 200px;
+
+
+
+}
+.listNew > .hotNew {
+    height: 400px;
+    grid-column: 1/ 4;
+    grid-row: 1/ 3;
+    
+
+}
+.listNew > .adBox {
+    grid-column:5/ 7;
+}
